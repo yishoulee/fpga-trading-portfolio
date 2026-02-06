@@ -1,0 +1,38 @@
+# Vivado Project and Intermediate Files
+*.jou
+*.log
+*.rpt
+*.pb
+*.str
+*.dcp
+*.xpr
+.Xil/
+counter_prj/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.tmp/
+
+# Simulation files
+*.wdb
+*.vcd
+*.ghw
+
+# Generated Bitstreams (Can be rebuilt)
+*.bit
+# *.bin
+
+# Vim/Editor swaps and IDE
+*.swp
+*~
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak
+*.old
