@@ -22,5 +22,5 @@ gui:
 
 clean:
 	rm -rf $(SIM_BUILD_DIR) cdc_blinky.bit cdc_blinky_prj .Xil
-	rm -f *.log *.jou *.pb *.wdb *.str
+	rm -f *.log *.jou *.pb *.wdb *.str *.rpt
 	rm -f $(SCRIPTS_DIR)/*.log $(SCRIPTS_DIR)/*.jou

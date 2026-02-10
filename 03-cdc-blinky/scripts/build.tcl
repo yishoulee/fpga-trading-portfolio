@@ -32,6 +32,12 @@ if {[get_property PROGRESS [get_runs impl_1]] != "100%"} {
     exit 1
 }
 
+open_run impl_1
+# Report Logic
+report_utilization -file utilization.rpt
+report_timing_summary -file timing_summary.rpt
+report_cdc -file cdc_report.rpt
+
 # Copy bitstream to root for convenience
 file copy -force ./$project_name/$project_name.runs/impl_1/top.bit ./cdc_blinky.bit
 puts "Build Complete. Bitstream generated: cdc_blinky.bit"

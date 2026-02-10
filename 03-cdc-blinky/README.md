@@ -105,6 +105,17 @@ Remove build artifacts:
 make clean
 ```
 
+## Implementation Metrics
+After running `make build`, the following timing and utilization results were achieved (based on `timing_summary.rpt`, `cdc_report.rpt`, and `utilization.rpt`):
+
+| Metric | Target | Actual | Description |
+| :--- | :--- | :--- | :--- |
+| **WNS (100MHz)** | > 0ns | **+7.008 ns** | Worst Negative Slack (Fast Domain) |
+| **WNS (33MHz)** | > 0ns | **+27.035 ns** | Worst Negative Slack (Slow Domain) |
+| **CDC Violations** | 0 | **0** | Unsafe crossings (0 Unsafe, 0 Unknown) |
+| **LUT Utilization** | < 1% | **27 (0.06%)** | Logic usage (Slice LUTs) |
+| **Register Utilization** | < 1% | **68 (0.07%)** | Flip-Flop usage |
+
 ## How to Verify It Worked
 
 ### 1. The Result
