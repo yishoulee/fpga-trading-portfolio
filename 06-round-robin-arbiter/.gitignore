@@ -1,0 +1,13 @@
+# Vivado specific
+*.jou
+*.log
+*.pb
+*.wdb
+*.vcd
+.Xil/
+xsim.dir/
+
+# Build artifacts
+build/
+work/
+usage_statistics_webtalk.xml
