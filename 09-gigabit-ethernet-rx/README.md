@@ -73,7 +73,7 @@ The project moved from a non-functional state to a robust receiver by solving cr
 | :--- | :--- | :--- |
 | **Corrupted Data Capture** | Initial assumption that trace lengths were matched perfectly failed. We captured `0xFD` instead of `0xD5`. | Visualized bits via ILA. Realized `0xFD` is a specific bit-swap characteristic of sampling on the wrong clock edge (180-degree phase error). |
 | **Logic Analyzer Timing** | ILA requires a free-running clock even if the RX Clock stops. | Used the 125 MHz `gmii_rx_clk` derived from the PHY, ensuring debug capture works only when the cable is plugged in. |
-| **Pin Mismatch** | Documentation copied from a different board template listed wrong pins. | Verified against `AX7015B.xdc` and corrected the documentation (Pin B4 for Clock, not K17). |
+| **Pin Mismatch** | Documentation copied from a different board template listed wrong pins. | Verified against `AX7015B.xdc` and corrected the documentation (Pin B4 for Ethernet RX Clock, not K17). |
 | **Blind Tuning** | Randomly changing `IDELAY` taps (0, 15, 26) yielded no results. | Shifted strategy to **"See, then Fix"**. Implementing the ILA revealed the phase shift immediately, allowing a determinstic logical fix (Clock Inversion) rather than reliance on variable delays. |
 
 ## 5. RTL Modules: Detailed Architecture
