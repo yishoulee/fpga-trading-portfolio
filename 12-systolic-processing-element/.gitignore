@@ -1,0 +1,44 @@
+# Vivado Project and Build Directories
+build/
+sim_build/
+.Xil/
+
+# Log Files and Journals
+*.log
+*.jou
+*.str
+
+# Generated Bitstreams and Debug Probes
+top.bit
+top.ltx
+*.pb
+*.wdb
+
+# Reports
+*.rpt
+timing_summary.rpt
+utilization.rpt
+
+# Crash Dumps
+hs_err_pid*
+
+# Vitis / SDK
+.sdk/
+.metadata/
+*.bif
+*.bin
+
+# Temporary Simulation Files
+xsim.dir/
+xsim.log
+xsim.jou
+xvlog.log
+xvlog.pb
+xelab.log
+xelab.pb
+webtalk*
+
+# Miscellaneous
+.DS_Store
+*.backup.log
+*.backup.jou
