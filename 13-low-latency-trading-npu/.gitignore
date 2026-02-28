@@ -1,0 +1,36 @@
+# Vivado Project and Log Files
+.Xil/
+*.jou
+*.log
+*.pb
+*.wdb
+*.str
+*.backup.jou
+*.backup.log
+*.dcp
+
+# Build Artifacts
+build/
+xsim.dir/
+
+# Implementation Reports
+timing_summary.rpt
+utilization.rpt
+*.rpt
+
+# Generated Bitstreams and Debug Probes
+*.bit
+*.ltx
+*.bin
+
+# Simulation Files
+*.vcd
+*.saif
+*.wcfg
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
